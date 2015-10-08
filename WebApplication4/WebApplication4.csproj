@@ -170,9 +170,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\CommandHandler.cs" />
+    <Compile Include="Controllers\InterfaceMapper.cs" />
+    <Compile Include="Controllers\SomeCommandBus.cs" />
     <Compile Include="Models\INameModel.cs" />
     <Compile Include="Models\IValueModel.cs" />
-    <Compile Include="Models\SomeCommand.cs" />
+    <Compile Include="Models\CreateCommand.cs" />
     <Compile Include="Models\SomeViewModel.cs" />
     <Compile Include="Validation\AggregateValidator.cs" />
     <Compile Include="Validation\AggregateValidatorDescriptor.cs" />
@@ -252,7 +255,9 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Some\Index.cshtml" />
+    <Content Include="Views\Some\Create.cshtml" />
+    <Content Include="Views\Some\Edit.cshtml" />
+    <Content Include="Views\Some\View.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
